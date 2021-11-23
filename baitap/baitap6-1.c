@@ -1,4 +1,4 @@
-#include "cgen.ic"
+#include "cgen.h"
 
 void bn_pprint_node(bn_node_t n) {
   printf("%p\n", n);
@@ -19,6 +19,6 @@ int main() {
 
   bn_pprint(t, bn_pprint_node);
 
-  bn_free_tree(&t);
+  bn_free_tree(t);
   return 0;
 }
